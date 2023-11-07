@@ -1,0 +1,191 @@
+@import url("layout.css");
+
+
+/* Breadcrumb style*/
+
+.breadcrumb {
+  background-color: var(--text-color);
+  padding: 1.5rem;
+}
+
+.breadcrumb-content {
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  gap: .5rem;
+}
+
+.breadcrumb-content a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.breadcrumb-content p {
+  color: var(--text-color-dark);
+}
+
+
+.banner-title {
+
+  background-image: url(https://images.pexels.com/photos/3953481/pexels-photo-3953481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 20rem;
+  display: flex;
+  align-items: end;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.banner-title h1 {
+  padding: 0 0 3rem 6rem;
+  color: var(--text-color);
+}
+
+/* New styles */
+
+.news-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem;
+}
+
+.container-news {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 10rem;
+}
+
+.news {
+  margin: 16px;
+  flex-basis: 180px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s;
+  height: 350px;
+  width: 500px;
+}
+
+
+
+.news a {
+
+  background-color: rgba(51, 45, 45, 0.7);
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.7s;
+  font-size: 19px;
+}
+
+.container-news a:hover {
+  transform: scale(1.2);
+}
+
+.news1 {
+  background-image: url(https://telemedellin.tv/wp-content/uploads/2022/11/rugby-subacuatico-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 1px;
+  text-align: center;
+}
+
+.news1 a {
+  margin-top: 20rem;
+}
+
+.news2 {
+  background-image: url(https://telemedellin.tv/wp-content/uploads/2022/11/orcas-campeon-berlin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 1px;
+
+  text-align: center;
+}
+
+.news2 a {
+  margin-top: 20rem;
+}
+
+.news3 {
+  background-image: url(https://lanotapositiva.com/wp-content/uploads/2019/11/agua-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 1px;
+  text-align: center;
+}
+
+.news3 a {
+  margin-top: 20rem;
+}
+
+.news4 {
+  background-image: url(https://olimpicocol.co/web/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-31-at-12.50.25-PM-1200x675.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 1px;
+  text-align: center;
+}
+
+.news4 a {
+  margin-top: 20rem;
+}
+
+.news5 {
+  background-image: url(https://estaticos.elcolombiano.com/binrepository/849x566/0c0/780d565/none/11101/IPDJ/damas_42949463_20230731210558.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 1px;
+  text-align: center;
+}
+
+.news5 a {
+  margin-top: 20rem;
+}
+
+
+
+
+
+
+
+/* Table responsive */
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .container-news {
+    grid-template-columns: auto;
+  }
+
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 600px) {
+  .container-news {
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+
+  .news {
+    height: 210px;
+    width: 300px;
+  }
+}

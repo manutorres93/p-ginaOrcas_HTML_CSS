@@ -1,0 +1,8 @@
+@import url("layout.css");
+
+.banner-title {
+    background-image: url(../Img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 60%;
+}

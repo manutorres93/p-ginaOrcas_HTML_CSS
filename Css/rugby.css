@@ -1,0 +1,9 @@
+@import url("layout.css");
+
+.banner-title {
+    background-image: url(../Img/club.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: 0% 50%;
+
+}

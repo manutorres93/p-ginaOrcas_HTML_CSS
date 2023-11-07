@@ -1,0 +1,176 @@
+@import url("layout.css");
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* Section image */
+main{
+    margin-top: 9rem;
+}
+.index-image{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../Img/main-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: rotate(90deg); */
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+
+/* Section Results */
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.results-table {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 4rem;
+}
+
+.team-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--background-secundary-opacity);
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    border: .1rem solid var(--background-secundary);
+    backdrop-filter: blur(.5rem);
+
+}
+
+.team-results ol{
+    padding: 0;
+    margin: 0;
+}
+
+.team-results li{
+    list-style: none;
+    color: var(--text-color-dark);
+    font-size: 2rem;
+}
+
+
+/* Section Pay */
+
+.button-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.btn-bancolombia img{
+    width: 20rem;
+}
+
+
+/* Section Map */
+
+.main-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem;
+}
+
+.map iframe {
+    border-radius: 3rem;
+}
+
+/* Table responsive */
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    .map iframe{
+        width: 43.2rem;
+        height: 32.4rem;
+    }
+    .results-table {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3rem;
+    }
+   
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 600px){
+    
+    .map iframe{
+        width: 32.4rem;
+        height: 24.3rem;
+    }
+    .results-table {
+        display: grid;
+        grid-template-columns:  auto;
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,152 @@
+@import url("layout.css");
+
+
+/* Breadcrumb style*/
+
+.breadcrumb {
+    background-color: var(--text-color);
+    padding: 1.5rem;
+}
+
+.breadcrumb-content {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    gap: .5rem;
+}
+
+.breadcrumb-content a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.breadcrumb-content p {
+    color: var(--text-color-dark);
+}
+
+
+.banner-title {
+    background-image: url(https://mott.pe/noticias/wp-content/uploads/2018/04/Un-proyecto-en-blanco-y-negro-de-360-grados-que-dej%C3%B3-al-p%C3%BAblico-sorprendido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    align-items: end;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.banner-title h1 {
+    padding: 0 0 3rem 6rem;
+    color: var(--text-color);
+}
+
+/* Errores apartir de aqui */
+
+
+.autor-galery {
+    color: #61aefa;
+    margin-top: 3rem;
+    margin-left: 11.6rem;
+    font-weight: 700;
+}
+
+
+.section1-galery h2 {
+    margin: 15rem 0 0;
+    text-align: center;
+    font-size: 33px;
+    margin-right: 7rem;
+    color: #232851;
+}
+
+.container-galery {
+    width: 1250px;
+    margin: 7% auto;
+    border-radius: 10px;
+}
+
+.photos-galery {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.photos-galery div {
+    margin: 16px;
+    flex-basis: 180px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.photos-galery div>img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.photo-galery {
+    background-color: white;
+    transition: transform 0.7s;
+}
+
+.photo-galery:hover {
+    transform: scale(1.2);
+}
+
+
+/*............................................................................*/
+
+.container-video-galery {
+    width: 1250px;
+    margin: 7% auto;
+    border-radius: 10px;
+}
+
+.videos-galery {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.videos-galery div {
+    margin: 16px;
+    flex-basis: 180px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.videos-galery div>iframe {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.video-galery {
+    background-color: white;
+    transition: transform 0.7s;
+}
+
+.video-galery:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Table responsive */
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 600px) {}
